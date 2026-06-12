@@ -1,0 +1,99 @@
+/* ===== Login Page ===== */
+.login-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-bg);
+}
+
+.login-content {
+  padding: 32px 24px;
+  flex: 1;
+}
+
+.login-title {
+  font-size: 28px;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-dark);
+  margin-bottom: 8px;
+  line-height: 1.3;
+  white-space: pre-line;
+}
+
+.login-subtitle {
+  font-size: 14px;
+  font-weight: var(--font-weight-regular);
+  color: var(--color-text-gray);
+  line-height: 1.6;
+  margin-bottom: 32px;
+  white-space: pre-line;
+}
+
+/* ===== Form ===== */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-label {
+  position: absolute;
+  top: -8px;
+  left: 12px;
+  background-color: var(--color-bg);
+  padding: 0 4px;
+  font-size: 13px;
+  font-weight: var(--font-weight-regular);
+  color: var(--color-primary);
+  z-index: 1;
+}
+
+.input-field {
+  width: 100%;
+  height: 48px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 0 16px;
+  font-size: 14px;
+  font-weight: var(--font-weight-regular);
+  color: var(--color-text-dark);
+  background-color: transparent;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.input-field::placeholder {
+  color: var(--color-text-gray);
+}
+
+.input-field:focus {
+  border-color: var(--color-primary);
+}
+
+/* ===== Disabled Button ===== */
+.btn-disabled {
+  width: 100%;
+  height: 48px;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 16px;
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+  background-color: var(--color-disabled);
+  color: var(--color-white);
+  transition: all 0.2s ease;
+  margin-top: 8px;
+}
+
+.btn-disabled:hover {
+  background-color: #b8b8b8;
+}
+
+.btn-disabled:active {
+  transform: scale(0.98);
+}

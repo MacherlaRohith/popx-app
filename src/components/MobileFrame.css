@@ -1,0 +1,22 @@
+/* ===== Mobile Frame Container ===== */
+.mobile-frame-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.mobile-frame {
+  width: var(--mobile-width);
+  height: var(--mobile-height);
+  background-color: var(--color-bg);
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.12),
+    0 8px 20px rgba(0, 0, 0, 0.08),
+    0 0 0 1px rgba(0, 0, 0, 0.04);
+}

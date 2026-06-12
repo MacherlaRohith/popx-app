@@ -1,0 +1,99 @@
+/* ===== Signup Page ===== */
+.signup-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-bg);
+  overflow-y: auto;
+}
+
+.signup-content {
+  padding: 32px 24px;
+  flex: 1;
+}
+
+.signup-title {
+  font-size: 28px;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-dark);
+  margin-bottom: 28px;
+  line-height: 1.3;
+  white-space: pre-line;
+}
+
+/* ===== Signup Form ===== */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* ===== Required Asterisk ===== */
+.required {
+  color: var(--color-required);
+  margin-left: 1px;
+}
+
+/* ===== Radio Group ===== */
+.radio-group {
+  margin-top: 0;
+}
+
+.radio-label {
+  font-size: 14px;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-dark);
+  margin-bottom: 12px;
+}
+
+.radio-options {
+  display: flex;
+  gap: 32px;
+  margin-top: 8px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  position: relative;
+}
+
+.radio-option input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.radio-custom {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.radio-option input[type="radio"]:checked + .radio-custom {
+  border-color: var(--color-primary);
+}
+
+.radio-option input[type="radio"]:checked + .radio-custom::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+}
+
+.radio-text {
+  font-size: 14px;
+  font-weight: var(--font-weight-regular);
+  color: var(--color-text-dark);
+}
