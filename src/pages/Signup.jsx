@@ -55,7 +55,7 @@ const Signup = () => {
               id="signup-phone"
               type="tel"
               name="phone"
-              placeholder="Marry Doe"
+              placeholder="12345678"
               value={formData.phone}
               onChange={handleChange}
               className="input-field"
@@ -71,7 +71,7 @@ const Signup = () => {
               id="signup-email"
               type="email"
               name="email"
-              placeholder="Marry Doe"
+              placeholder="@gmail.com"
               value={formData.email}
               onChange={handleChange}
               className="input-field"
@@ -87,7 +87,7 @@ const Signup = () => {
               id="signup-password"
               type="password"
               name="password"
-              placeholder="Marry Doe"
+              placeholder="Password"
               value={formData.password}
               onChange={handleChange}
               className="input-field"
@@ -103,7 +103,7 @@ const Signup = () => {
               id="signup-company"
               type="text"
               name="company"
-              placeholder="Marry Doe"
+              placeholder="Company"
               value={formData.company}
               onChange={handleChange}
               className="input-field"
